@@ -17,10 +17,12 @@ public class CarDemo {
 		
 		if(compareType=='c') {
 			//compare based on passenger capacity, find highest and return carname
+			//bestCarName=something
 		}
 		
 		else if(compareType=='p') {
 			//compare based on price, find highest and return carname
+			//bestCarName=something
 		}
 		
 		return bestCarName;
