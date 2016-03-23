@@ -17,9 +17,18 @@ public class SorterDemo {
 		
 		str=new String(arr_student[0].getName()+arr_student[1].getName()+arr_student[2].getName());
 		
-		System.out.println(sortDouble(arr_double));
-		System.out.println(sortString(str));
-		System.out.println(sortStudent(arr_student));
+		
+		sortDouble(arr_double);
+		for(double element:arr_double)
+			System.out.println(element);
+		
+		sortString(str);
+		System.out.println(str);
+		
+		sortStudent(arr_student);
+		for(Student s:arr_student)
+			System.out.println(s);
+		
 	}
 	public static double[] sortDouble(double[] arr_double) {
 		java.util.Arrays.sort(arr_double);
@@ -32,7 +41,8 @@ public class SorterDemo {
 		
 	}
 	public static Student[] sortStudent(Student[] arr_student) {
-		java.util.Arrays.sort(arr_student);
+		java.util.Arrays.sort((Object[])arr_student);
+		arr_student=(Student[])arr_student;
 		return arr_student;
 	}
 }
