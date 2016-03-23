@@ -9,7 +9,7 @@ public class ItemDemo {
 		item[3]=new Item(1,"Floppy",100,5);
 		item[4]=new Item(1,"Floppy",100,5);
 		
-		System.out.println(getLeastPriceItem(item));
+		System.out.println(getLeastPriceItem(item).getItemName());
 	}
 	
 	public static Item getLeastPriceItem(Item[] items) {
