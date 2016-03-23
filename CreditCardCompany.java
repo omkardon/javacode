@@ -12,11 +12,17 @@ public class CreditCardCompany {
 				charge-=500;
 			}
 			if(charge>0) {
-				payBackAmount+=0.005*charge;
+				if(charge<1000)
+					payBackAmount+=0.005*charge;
+				else
+					payBackAmount+=0.005*1000;
 				charge-=1000;
 			}
 			if(charge>0) {
-				payBackAmount+=0.0075*charge;
+				if(charge<1000)
+					payBackAmount+=0.0075*charge;
+				else
+					payBackAmount+=0.0075*1000;
 				charge-=1000;
 			}
 			if(charge>0) {
