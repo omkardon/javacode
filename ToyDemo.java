@@ -11,7 +11,7 @@ public class ToyDemo {
 		
 
 	}
-	public Static String getLeastPriceToy(Toy t1, Toy t2, Toy t3, Toy t4, String param_category) {
+	public static String getLeastPriceToy(Toy t1, Toy t2, Toy t3, Toy t4, String param_category) {
 		double [] price= new double [4];
 		if(param_category=="") {
 			return "no category found";
